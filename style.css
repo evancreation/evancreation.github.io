@@ -1,5 +1,7 @@
 /* RESET & BASE STYLES */
 * {
+    margin: 0;/* RESET & BASE STYLES */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -204,6 +206,19 @@ nav {
 .featured-item p {
     margin-bottom: 1.5rem;
     color: var(--text-light);
+    line-height: 1.6;
+}
+
+.featured-item .btn-small {
+    background: var(--accent);
+    color: var(--white);
+    border: 2px solid var(--accent);
+}
+
+.featured-item .btn-small:hover {
+    background: #c0392b;
+    border-color: #c0392b;
+    transform: translateY(-2px);
 }
 
 /* ABOUT CONTENT */
