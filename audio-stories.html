@@ -5,61 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Stories - Evan</title>
     <link rel="stylesheet" href="style.css?v=4">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- NAVIGATION -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">EVAN</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="film-documentary.html">Film & Documentary</a></li>
-                <li><a href="audio-stories.html">Audio Stories</a></li>
-                <li><a href="visual-design.html">Visual Design</a></li>
-                <li><a href="professional-writing.html">Professional Writing</a></li>
-                <li><a href="creative-writing.html">Creative Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <div class="nav-brand">EVAN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="film-documentary.html">Film & Documentary</a></li>
+            <li><a href="audio-stories.html" class="active">Audio Stories</a></li>
+            <li><a href="visual-design.html">Visual Design</a></li>
+            <li><a href="professional-writing.html">Professional Writing</a></li>
+            <li><a href="creative-writing.html">Creative Writing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Audio Stories</h1>
-            <p class="page-subtitle">Audio narratives and interview projects documenting personal stories and community voices</p>
-        </div>
-    </section>
-
-    <!-- AUDIO WORK SECTION -->
     <section class="work-section">
         <div class="container">
-            
-            <!-- AUDIO NARRATIVE PROJECT -->
-            <div class="project featured">
-                <h3>[Audio Narrative Title]</h3>
-                <p class="project-meta">Type: Audio Narrative/Documentary | Duration: [X]min | [Year]</p>
-                <p class="project-description">
-                    [Description of your full audio narrative. What story did you tell? What narrative techniques 
-                    did you use? What makes this piece compelling? 2-3 sentences.]
-                </p>
+            <h1 class="page-title">Audio Stories</h1>
+            <p class="page-subtitle">Audio narratives and interview projects documenting personal stories and community voices</p>
+
+            <!-- CLOTHES THAT MAKE US -->
+            <div class="project-detail">
+                <h2>Clothes That Make Us</h2>
+                <p class="project-meta">Type: Audio Documentary | Duration: 1:10 | Fall 2025</p>
+                
                 <div class="audio-embed">
-                    <!-- SoundCloud embed will go here once uploaded -->
-                    <!-- <iframe width="100%" height="166" scrolling="no" frameborder="no" 
-                            src="https://w.soundcloud.com/player/?url=YOUR_SOUNDCLOUD_URL"></iframe> -->
-                    <div style="padding: 2rem; text-align: center; color: var(--text-dim);">
-                        Audio will be embedded here once uploaded to SoundCloud
-                    </div>
+                    <iframe width="100%" 
+                            height="166" 
+                            scrolling="no" 
+                            frameborder="no" 
+                            allow="autoplay" 
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1984279820&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                    </iframe>
+                </div>
+
+                <div class="project-description">
+                    <p>
+                        An audio documentary exploring how clothing shapes identity and self-expression. Through intimate 
+                        interviews, participants reflect on their favorite articles of clothing and what they reveal about 
+                        personal history, confidence, and belonging.
+                    </p>
+                    <p>
+                        The piece weaves together diverse perspectives—from platform Demonia boots that make someone feel tall 
+                        and confident, to cargo pants that signal adulthood and professionalism, to college night shirts that 
+                        carry memories of dorm life and friendship. Each story reveals how we use clothing to navigate identity, 
+                        comfort, and self-presentation.
+                    </p>
+                    <p>
+                        <strong>Production:</strong> Conducted interviews, edited and mixed audio using Adobe Audition. 
+                        Crafted narrative structure to highlight themes of gender expression, memory, and the everyday ways 
+                        clothing tells our stories.
+                    </p>
+                </div>
+
+                <div class="project-transcript">
+                    <h3>Transcript</h3>
+                    <p><strong>Speaker 1:</strong> Ooh, what's my favorite article of clothing? I'd have to say my demonias, my big platform demonia boots, because they can make like any outfit cuter really fast and they make me feel very tall.</p>
+                    
+                    <p><strong>Speaker 2:</strong> This shirt I am wearing right now because it is probably the first shirt I got after getting here in college for the first time on my own.</p>
+                    
+                    <p><strong>Speaker 3:</strong> Cargo pants, because they make me feel official and professional and like an actual like adult and stuff.</p>
+                    
+                    <p><strong>Speaker 4:</strong> I like earrings because I can be creative with them and like I like putting silly things on my ears.</p>
+                    
+                    <p><strong>Speaker 5:</strong> Sweaters, because they're warm and comfortable.</p>
+                    
+                    <p><strong>Speaker 6:</strong> I really like shoes because if I had to walk barefoot, it'd be a really big sensory issue.</p>
+                    
+                    <p><strong>Speaker 7:</strong> Dresses, because they made me feel confident.</p>
+                    
+                    <p><strong>Speaker 8:</strong> My converse, I wear them literally everywhere. They are my best friends. Yes, they have holes. I don't care.</p>
+                    
+                    <p><strong>Speaker 9:</strong> Probably a night shirt I had when I was in college. Now, why would be because it brings back good memories of dorm life and the friends that I had when I was in college.</p>
+                    
+                    <p><strong>Speaker 10:</strong> I decided it's not a specific article of clothing. It's any article of clothing that you can buy oversized.</p>
                 </div>
             </div>
 
-            <!-- INTERVIEW PROJECT -->
-            <div class="project">
-                <h3>[Interview Project Title]</h3>
-                <p class="project-meta">Type: Interview Series/Documentary | Duration: [X]min | [Year]</p>
-                <p class="project-description">
-                    [Description of your interviewing project. Who did you interview? What themes did you explore? 
+            <!-- UPCOMING PROJECTS SECTION -->
+            <div class="upcoming-section">
+                <h2>Spring 2026 Projects (In Production)</h2>
+                <p>Additional audio documentary projects currently in development. Check back for updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>                    [Description of your interviewing project. Who did you interview? What themes did you explore? 
                     What audio production techniques did you use? 2-3 sentences.]
                 </p>
                 <div class="audio-embed">
