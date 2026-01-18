@@ -116,26 +116,43 @@
     </footer>
 
 <script>
-// Click to toggle dropdown (for mobile/touch devices)
-document.querySelectorAll('.dropbtn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const dropdown = this.parentElement;
-        
-        // Close other dropdowns
-        document.querySelectorAll('.dropdown').forEach(d => {
-            if (d !== dropdown) d.classList.remove('active');
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Click to toggle dropdown
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const dropdown = this.parentElement;
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all dropdowns first
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // If this one wasn't active, open it
+            if (!isActive) {
+                dropdown.classList.add('active');
+            }
         });
-        
-        // Toggle this dropdown
-        dropdown.classList.toggle('active');
     });
-});
 
-// Close dropdown when clicking outside
-document.addEventListener('click', function() {
-    document.querySelectorAll('.dropdown').forEach(d => {
-        d.classList.remove('active');
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+        }
+    });
+    
+    // Prevent dropdown from closing when clicking inside it
+    document.querySelectorAll('.dropdown-content').forEach(content => {
+        content.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
     });
 });
 </script>
