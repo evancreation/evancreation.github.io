@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Writing - Evan</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="index.html">About</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Audiovisual Production</button>
+        <div class="dropdown-content">
+          <a href="film-documentary.html">Film & Documentary</a>
+          <a href="audio-stories.html">Audio Stories</a>
+          <a href="broadcast-news.html">Broadcast/News</a>
+          <a href="visual-design.html">Visual Design</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Writing</button>
+        <div class="dropdown-content">
+          <a href="professional-writing.html">Professional Writing</a>
+          <a href="academic-writing.html">Academic Writing</a>
+          <a href="creative-writing.html">Creative Writing</a>
+        </div>
+      </div>
+      
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Academic Writing</h1>
+            <p class="page-subtitle">Research papers and scholarly work exploring gender, sexuality, and social justice</p>
+        </div>
+    </section>
+
+    <!-- WRITING SAMPLES -->
+    <section class="work-section">
+        <div class="container">
+            <div class="writing-list">
+
+                <!-- ACE SPECTRUM PAPER -->
+                <div class="writing-sample featured">
+                    <h3>The Ace Spectrum Label Debate: Examining the Benefits and Limitations of Naming Orientations</h3>
+                    <p class="project-meta">Gender, Women's & Sexuality Studies | 10 pages | Fall 2024</p>
+                    
+                    <p class="project-description">
+                        This research paper examines how identity labels within the asexual spectrum serve both as tools for recognition and potential sites of constraint. Drawing on primary research conducted through anonymous engagement with ace community members on Reddit, the paper explores how micro-labels facilitate community formation, provide language for previously unnamed experiences, and advance more nuanced understandings of attraction.
+                    </p>
+
+                    <p class="project-description" style="font-style: italic; margin-top: 1.5rem;">
+                        <strong>Excerpt:</strong>
+                    </p>
+
+                    <p class="project-description">
+                        Scholars have raised significant critiques about the proliferation of identity labels within gender and sexuality studies. Jack Halberstam argues that the expansion of identity categories extends problematic Victorian and colonial traditions of classification that are rooted in scientific racism. At the same time, Judith Lorber contends that multiplying identity labels, though personally validating, may reinforce rather than challenge fundamental binaries. However, while raising valid concerns about categorization and power, these critiques fail to fully recognize how identity labels can serve as vital tools for recognition and community formation among marginalized groups.
+                    </p>
+
+                    <p class="project-description">
+                        The asexual spectrum, colloquially called the "ace spectrum," offers a compelling case study for examining how emerging identity labels can provide validation, understanding, and community for individuals whose experiences have historically lacked vocabulary for expression. Drawing on recent research showing that approximately 1% of the population identifies as asexual, along with evidence that ace spectrum individuals report distinct patterns in attraction, behavior, and identity, I argue that the proliferation of ace spectrum labels serves three crucial functions: providing language for previously unnamed experiences, facilitating community formation and support, and advancing more nuanced understandings of the relationships between romantic and sexual attraction.
+                    </p>
+
+                    <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">Download Full Paper (PDF)</a>
+                </div>
+
+                <!-- BRADWELL PAPER -->
+                <div class="writing-sample">
+                    <h3>Bradwell v. Illinois: A Reimagined Supreme Court Decision</h3>
+                    <p class="project-meta">Political Science | 8 pages | Fall 2025</p>
+                    
+                    <p class="project-description">
+                        A reimagined Supreme Court decision for the 1873 case Bradwell v. Illinois, in which the Court originally upheld Illinois' denial of Myra Bradwell's application to practice law based solely on her sex. This alternate opinion argues that such exclusion violates both the Privileges or Immunities Clause and the Equal Protection Clause of the Fourteenth Amendment, challenging the "separate spheres" ideology that confined women to domestic roles.
+                    </p>
+
+                    <p class="project-description" style="font-style: italic; margin-top: 1.5rem;">
+                        <strong>Excerpt:</strong>
+                    </p>
+
+                    <p class="project-description">
+                        Mrs. Myra Bradwell meets every requirement Illinois law sets for bar admission. She has good character, requisite legal training, and demonstrable competence in legal analysis, as evidenced by her work founding and editing the Chicago Legal News. Nevertheless, the Illinois Supreme Court denied her application for one reason: she is a woman. We are asked whether this denial violates the Fourteenth Amendment. It does.
+                    </p>
+
+                    <p class="project-description">
+                        The Fourteenth Amendment provides that "No state shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States." The right to pursue a lawful profession represents a fundamental privilege of citizenship. When Illinois excludes qualified women from legal practice based solely on sex, it creates two classes of citizens with different rights. This is precisely what the Fourteenth Amendment was designed to prevent.
+                    </p>
+
+                    <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">Download Full Paper (PDF)</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evan. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Click to toggle dropdown
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            const dropdown = this.parentElement;
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all dropdowns first
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // If this one wasn't active, open it
+            if (!isActive) {
+                dropdown.classList.add('active');
+            }
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+        }
+    });
+});
+</script>
+    
+</body>
+</html>
