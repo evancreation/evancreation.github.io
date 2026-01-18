@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadcast/News - Evan</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="index.html">About</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Audiovisual Production</button>
+        <div class="dropdown-content">
+          <a href="film-documentary.html">Film & Documentary</a>
+          <a href="audio-stories.html">Audio Stories</a>
+          <a href="broadcast-news.html">Broadcast/News</a>
+          <a href="visual-design.html">Visual Design</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Writing</button>
+        <div class="dropdown-content">
+          <a href="professional-writing.html">Professional Writing</a>
+          <a href="academic-writing.html">Academic Writing</a>
+          <a href="creative-writing.html">Creative Writing</a>
+        </div>
+      </div>
+      
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Broadcast/News</h1>
+            <p class="page-subtitle">Broadcast journalism work including live reporting, news packages, and on-camera presentation</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="work-section">
+        <div class="container">
+            
+            <!-- NEWS REEL -->
+            <div class="project featured">
+                <h3>News Reel - 2025</h3>
+                <p class="project-meta">Type: Broadcast Journalism | Duration: Various Segments | 2025</p>
+                
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/PLuIoHjHC7A" title="News Reel 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p class="project-description">
+                    A compilation news reel showcasing broadcast journalism skills including live standup reporting, teleprompter delivery, news package production, and interview techniques.
+                </p>
+                
+                <p class="project-description">
+                    <strong>Skills Demonstrated:</strong><br>
+                    • Live standup reporting with on-location presence<br>
+                    • Teleprompter reading with natural delivery<br>
+                    • News package production and editing<br>
+                    • Interview conducting and questioning techniques<br>
+                    • On-camera presentation and professionalism
+                </p>
+
+                <p class="project-description">
+                    <strong>Production:</strong> Produced for Appalachian State University broadcast journalism coursework. Demonstrates ability to work under deadline pressure, adapt to breaking news situations, and deliver clear, concise reporting across multiple formats.
+                </p>
+            </div>
+
+            <!-- SECTION DIVIDER -->
+            <div class="section-divider">
+                <h2>Spring 2026 Projects (In Production)</h2>
+            </div>
+
+            <div class="project">
+                <p class="project-description">Additional broadcast and news projects currently in development. Check back for updates.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evan. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Click to toggle dropdown
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            const dropdown = this.parentElement;
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all dropdowns first
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // If this one wasn't active, open it
+            if (!isActive) {
+                dropdown.classList.add('active');
+            }
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+        }
+    });
+});
+</script>
+    
+</body>
+</html>
