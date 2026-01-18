@@ -114,5 +114,31 @@
             <p>&copy; 2026 Evan. All rights reserved.</p>
         </div>
     </footer>
+
+<script>
+// Click to toggle dropdown (for mobile/touch devices)
+document.querySelectorAll('.dropbtn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const dropdown = this.parentElement;
+        
+        // Close other dropdowns
+        document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) d.classList.remove('active');
+        });
+        
+        // Toggle this dropdown
+        dropdown.classList.toggle('active');
+    });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function() {
+    document.querySelectorAll('.dropdown').forEach(d => {
+        d.classList.remove('active');
+    });
+});
+</script>
+    
 </body>
 </html>
