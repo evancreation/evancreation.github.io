@@ -101,7 +101,7 @@ nav > a:hover::after {
     font-family: 'Jost', sans-serif;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 0.5rem 0; /* Added padding for bigger click area */
     transition: all 0.3s ease;
     position: relative;
 }
@@ -135,7 +135,8 @@ nav > a:hover::after {
     background: rgba(15, 15, 30, 0.98);
     backdrop-filter: blur(10px);
     min-width: 220px;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem; /* Reduced gap so there's less dead space */
+    padding-top: 0.25rem; /* Added padding at top for easier hover */
     border-radius: 8px;
     border: 1px solid rgba(0, 217, 255, 0.3);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4),
@@ -167,7 +168,13 @@ nav > a:hover::after {
     text-shadow: 0 0 10px var(--neon-cyan);
 }
 
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Keep dropdown open when clicked (via class toggle) */
+.dropdown.active .dropdown-content {
     display: block;
 }
 
