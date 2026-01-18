@@ -10,18 +10,28 @@
 <body>
     <!-- NAVIGATION -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">EVAN</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="film-documentary.html">Film & Documentary</a></li>
-                <li><a href="audio-stories.html">Audio Stories</a></li>
-                <li><a href="visual-design.html">Visual Design</a></li>
-                <li><a href="professional-writing.html">Professional Writing</a></li>
-                <li><a href="creative-writing.html">Creative Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+      <a href="index.html">About</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Audiovisual Production</button>
+        <div class="dropdown-content">
+          <a href="film-documentary.html">Film & Documentary</a>
+          <a href="audio-stories.html">Audio Stories</a>
+          <a href="broadcast-news.html">Broadcast/News</a>
+          <a href="visual-design.html">Visual Design</a>
         </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Writing</button>
+        <div class="dropdown-content">
+          <a href="professional-writing.html">Professional Writing</a>
+          <a href="academic-writing.html">Academic Writing</a>
+          <a href="creative-writing.html">Creative Writing</a>
+        </div>
+      </div>
+      
+      <a href="contact.html">Contact</a>
     </nav>
 
     <!-- PAGE HEADER -->
@@ -119,5 +129,40 @@
             <p>&copy; 2026 Evan. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Click to toggle dropdown
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            const dropdown = this.parentElement;
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all dropdowns first
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // If this one wasn't active, open it
+            if (!isActive) {
+                dropdown.classList.add('active');
+            }
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+        }
+    });
+});
+</script>
+    
 </body>
 </html>
