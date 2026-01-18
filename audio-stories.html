@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Click to toggle dropdown
     document.querySelectorAll('.dropbtn').forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
             e.stopPropagation();
             
             const dropdown = this.parentElement;
@@ -146,13 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 d.classList.remove('active');
             });
         }
-    });
-    
-    // Prevent dropdown from closing when clicking inside it
-    document.querySelectorAll('.dropdown-content').forEach(content => {
-        content.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
     });
 });
 </script>
