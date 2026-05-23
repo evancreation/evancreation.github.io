@@ -15,7 +15,7 @@
       <div class="dropdown">
         <button class="dropbtn">Audiovisual Production</button>
         <div class="dropdown-content">
-          <a href="film-documentary.html">Film Production</a>
+          <a href="film.html">Film Production</a>
           <a href="audio-stories.html">Audio Stories</a>
           <a href="broadcast-news.html">Broadcast/News</a>
           <a href="design-motion.html">Design &amp; Motion</a>
@@ -45,7 +45,7 @@
     <!-- PROJECTS SECTION -->
     <section class="work-section">
         <div class="container">
-            
+
             <!-- UNSEEN WORKERS -->
             <div class="project featured">
                 <h3>Unseen Workers of the Union</h3>
@@ -66,11 +66,6 @@
                 </p>
             </div>
 
-            <!-- SECTION DIVIDER -->
-            <div class="section-divider">
-                <h2>Spring 2026</h2>
-            </div>
-
             <!-- ON AND ON -->
             <div class="project featured">
                 <h3>On and On</h3>
@@ -81,24 +76,41 @@
                 </div>
 
                 <p class="project-description">
-                    A supernatural short following Gabe, a man drawn into an unknown world by a mysterious figure appearing through his television static. The film builds dread through tight intercutting, an original opening animation, and careful ADR work to sell the uncanny atmosphere.
+                    A short film about the insidious pull of screens and algorithms. The way passive consumption quietly becomes something harder to name. Gabe sits in front of static, already gone. What follows is less a haunting than a handshake: the screen doesn't force him anywhere. It just makes it easy to go.
+                </p>
+                <p class="project-description">
+                    The film uses intercutting, ADR, and an original opening animation to build unease out of stillness. The horror isn't loud. It's familiar.
                 </p>
                 <p class="project-description">
                     <strong>My Role:</strong> Editing, ADR production and integration, opening title animation.
                 </p>
             </div>
 
+            <!-- SECTION DIVIDER -->
+            <div class="section-divider">
+                <h2>Skills Showcase</h2>
+            </div>
+
+            <div class="project featured">
+                <p class="project-description">
+                    The following projects were completed using footage provided by <a href="https://www.editstock.com" target="_blank" style="color: var(--neon-cyan);">EditStock</a>, a platform that supplies professional, multi-camera footage for editors to cut. Each piece was chosen to demonstrate a specific skill set: documentary pacing, continuity editing, and commercial storytelling.
+                </p>
+            </div>
+
             <!-- SCRAMBLE KING -->
             <div class="project featured">
                 <h3>Scramble King</h3>
-                <p class="project-meta">Type: Mini-Documentary | Spring 2026 | Footage: EditStock</p>
+                <p class="project-meta">Type: Mini-Documentary Edit | Spring 2026 | Footage: EditStock</p>
 
                 <div class="video-embed">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/kc2UCpjTmko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <p class="project-description">
-                    A character-driven mini-documentary following Emelio Hernandez as he works toward competing for a Brazilian jiu-jitsu world championship. The edit builds a portrait of obsession, discipline, and identity through interview and training footage.
+                    Emilio Hernandez is a Brazilian jiu-jitsu competitor from Spring Hill, Tennessee, a place most people don't associate with the sport, which is part of what makes him interesting. He trains under Ray Casias, spars with UFC and Bellator fighters, and carries the nickname "Scramble King" for a style built on mobility and controlled chaos. His goal is a black belt world championship under the IBJJF.
+                </p>
+                <p class="project-description">
+                    The edit builds his portrait through interview pacing and training footage, letting his voice carry the structure while the cuts reflect his approach to the mat: deliberate, never static.
                 </p>
                 <p class="project-description">
                     <strong>My Role:</strong> Editor. Footage provided by EditStock.
@@ -107,7 +119,7 @@
 
             <!-- CROSSOVER -->
             <div class="project featured">
-                <h3>Crossover — Scene Edit</h3>
+                <h3>Crossover: Scene Edit</h3>
                 <p class="project-meta">Type: Continuity Editing | Spring 2026 | Footage: EditStock</p>
 
                 <div class="video-embed">
@@ -115,7 +127,10 @@
                 </div>
 
                 <p class="project-description">
-                    A scene edit from <em>Crossover</em>, an indie film centered on a young woman navigating her love of sports against her mother's expectations and her aunt's quiet support. This edit demonstrates continuity cutting, screen direction, and pacing across a multi-character dialogue scene.
+                    A scene from <em>Crossover</em>, written by Mohanalakshmi Rajakumar and Kali Bailey. Mala is 18, quietly obsessed with basketball, and navigating a dinner table conversation with her mother Kavitha (who has different plans for her) and her Aunt Anitha, who is very much in on the secret. It's a three-character scene built on subtext: what's said, what's covered up, and what passes between Mala and Anitha in a single glance.
+                </p>
+                <p class="project-description">
+                    The edit focuses on continuity, screen direction, and using coverage to track the shifting power dynamics across the table.
                 </p>
                 <p class="project-description">
                     <strong>My Role:</strong> Editor. Footage provided by EditStock.
@@ -124,7 +139,7 @@
 
             <!-- J POP COMMERCIAL -->
             <div class="project featured">
-                <h3>J Pop — :60 Commercial Edit</h3>
+                <h3>J Pop: :60 Commercial Edit</h3>
                 <p class="project-meta">Type: Commercial Edit | Duration: :60 | Spring 2026 | Footage: EditStock</p>
 
                 <div class="video-embed">
@@ -132,7 +147,7 @@
                 </div>
 
                 <p class="project-description">
-                    A 60-second commercial built around ultra-slow-motion 1000fps footage of exploding popsicle sticks. The edit constructs a light, playful love story — boy sees girl, sets up the moment, gets the girl — using the visual spectacle of tension and release to carry the narrative.
+                    Ultra-slow-motion 1000fps footage of popsicle sticks exploding under tension, cut into a 60-second commercial with a simple through-line: boy sees girl, sets up the moment, sticks land right. The footage does the spectacle; the edit does the story.
                 </p>
                 <p class="project-description">
                     <strong>My Role:</strong> Editor. Footage provided by EditStock.
@@ -154,14 +169,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.dropbtn').forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
-            
             const dropdown = this.parentElement;
             const isActive = dropdown.classList.contains('active');
-            
             document.querySelectorAll('.dropdown').forEach(d => {
                 d.classList.remove('active');
             });
-            
             if (!isActive) {
                 dropdown.classList.add('active');
             }
