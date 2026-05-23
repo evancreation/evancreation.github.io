@@ -515,6 +515,7 @@ nav > a:hover::after {
 
 .audio-embed {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 8px;
     border: 2px solid var(--neon-violet);
     padding: 1rem;
