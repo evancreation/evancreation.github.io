@@ -608,6 +608,10 @@ nav > a:hover::after {
     box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
 }
 
+.writing-sample.featured:hover {
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.3);
+}
 /* STATUS BADGES */
 .status-badge {
     display: inline-block;
