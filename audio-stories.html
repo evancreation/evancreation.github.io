@@ -94,22 +94,22 @@ document.addEventListener('click', function(e) {
                 </p>
             </div>
 
-            <!-- ADR -->
-            <div class="project">
-                <h3>ADR & Vocal Processing</h3>
-                <p class="project-meta">Type: Sound Design | Fall 2025</p>
-                
-                <div class="audio-embed" style="margin-bottom: 1.5rem;">
-                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://on.soundcloud.com/Gj9zewB4ytkaJkUygt"></iframe>
-                </div>
+           <!-- ADR -->
+<div class="project featured">
+    <h3>ADR & Vocal Processing</h3>
+    <p class="project-meta">Type: Sound Design | Fall 2025</p>
+    
+    <div class="audio-embed" style="margin-bottom: 1.5rem;">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2401083585&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
 
-                <p class="project-description">
-                    Individual contribution to a narrative short: recorded and processed original dialogue, using pitch-shifting, layering and reverb to build a haunting, disembodied vocal quality.
-                </p>
-                <p class="project-description">
-                    <strong>Production:</strong> Recorded ADR lines and edited using Adobe Audition to create tension through sound alone.
-                </p>
-            </div>
+    <p class="project-description">
+        Individual contribution to a narrative short: recorded and processed original dialogue, using pitch-shifting, layering and reverb to build a haunting, disembodied vocal quality.
+    </p>
+    <p class="project-description">
+        <strong>Production:</strong> Recorded ADR lines and edited using Adobe Audition to create tension through sound alone.
+    </p>
+</div>
 
         </div>
     </section>
@@ -120,39 +120,5 @@ document.addEventListener('click', function(e) {
             <p>&copy; 2026 Evan. All rights reserved.</p>
         </div>
     </footer>
-
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
     
 </html>
