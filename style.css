@@ -458,6 +458,9 @@ nav > a:hover::after {
     margin-bottom: 4rem;
     padding-bottom: 4rem;
     border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project:last-child {
@@ -470,9 +473,6 @@ nav > a:hover::after {
     border-radius: 10px;
     border: 2px solid rgba(0, 217, 255, 0.3);
     box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .project h3 {
