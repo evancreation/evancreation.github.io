@@ -46,20 +46,18 @@ document.addEventListener('click', function(e) {
     <section class="contact-section">
         <div class="container">
             <p class="contact-intro">
-                I'm currently seeking internship opportunities in AV editing and multimedia production, 
-                particularly with nonprofit organizations working toward social justice and community empowerment.
+                I'm currently seeking communications, digital media, and multimedia production opportunities with universities, nonprofits, and mission-driven organizations. If you're looking for a writer, designer, or storyteller who can move across formats, I'd love to hear about your work.
             </p>
             <p class="contact-intro">
-                Whether you're looking for a video editor, audio producer, or multimedia storyteller, 
-                I'd love to hear about your project.
+                Whether you need someone to write, design, or edit, I tend to end up doing all three. I'd love to hear about what you're building.
             </p>
             
             <div class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:evancreation@proton.me">evancreation@proton.me</a></p>
-                <p><strong>Location:</strong> Boone, NC</p>
+                <p><strong>Location:</strong> Staley, NC</p>
             </div>
             <div class="cta-buttons" style="margin-top: 2rem;">
-                <a href="Atkins, Evan, Resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+                <a href="AtkinsEvanResumeFall26.pdf" class="btn btn-secondary" target="_blank">Resume</a>
                 <a href="index.html" class="btn btn-secondary">Back to Home</a>
             </div>
         </div>
@@ -70,38 +68,6 @@ document.addEventListener('click', function(e) {
             <p>&copy; 2026 Evan. All rights reserved.</p>
         </div>
     </footer>
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
     
 </body>
 </html>
