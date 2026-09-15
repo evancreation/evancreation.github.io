@@ -74,46 +74,29 @@ document.addEventListener('click', function(e) {
         </div>
     </section>
 
+    <div class="writing-sample featured">
+    <h3>A Family Found</h3>
+    <p class="project-meta">Genre: Speculative Fiction | Short Story Collection | 35 pages</p>
+    <p class="project-description">
+        A collection of interconnected short stories following a chosen family of cyborg characters navigating autonomy, class, disability, and belonging. Through multiple points of view, the collection explores how found family forms in the space left behind when biological family fails to provide safety or acceptance.
+    </p>
+    <a href="a-family-found.pdf" class="btn btn-secondary" style="margin-top: 1rem;" target="_blank">Read (PDF)</a>
+</div>
+
+    <div class="writing-sample featured">
+    <h3>Ignorance is Easier to Heal</h3>
+    <p class="project-meta">Genre: Speculative Fiction | Queer Theory Final | Spring 2026 | Page Design: Adobe InDesign</p>
+    <p class="project-description">
+        A short story following Audrina, a sheltered and privileged character, as they're gently but honestly confronted with their own naivety while volunteering at a cyborg community event. Designed with custom print layout and illustration elements to complement the narrative.
+    </p>
+    <a href="ignorance-easier-heal.pdf" class="btn btn-secondary" style="margin-top: 1rem;" target="_blank">Read (PDF)</a>
+</div>
+
     <!-- FOOTER -->
     <footer>
         <div class="container">
             <p>&copy; 2026 Evan. All rights reserved.</p>
         </div>
     </footer>
-
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
-    
 </body>
 </html>
