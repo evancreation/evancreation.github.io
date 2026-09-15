@@ -575,13 +575,16 @@ nav > a:hover::after {
 }
 
 /* WRITING LIST */
+/* WRITING LIST */
 .writing-list {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .writing-sample {
-    margin-bottom: 2.5rem;
     padding: 2rem;
     border-radius: 8px;
     background: rgba(26, 26, 46, 0.4);
@@ -749,4 +752,51 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--neon-pink);
     box-shadow: 0 0 10px var(--neon-pink);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .dropdown-content {
+        min-width: 180px;
+        font-size: 0.9rem;
+    }
+    
+    .dropdown-content a {
+        padding: 10px 12px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured-grid,
+    .design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .writing-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
 }
