@@ -48,31 +48,21 @@ document.addEventListener('click', function(e) {
     <section class="work-section">
         <div class="container">
             
-            <!-- NEWS REEL -->
-            <div class="project featured">
-                <h3>News Reel - 2025</h3>
-                <p class="project-meta">Type: Broadcast Journalism | Duration: Various Segments | 2025</p>
-                
-                <div class="video-embed">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/In2Sq59V7cM?si=v1lV0GAJhsWfgCcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+           <!-- PRESERVING APPALACHIAN HERITAGE -->
+            <div class="project">
+            <h3>Preserving Appalachian Heritage</h3>
+            <p class="project-meta">Type: News Package | Duration: 2:31 | Fall 2025</p>
+    
+            <div class="video-embed" style="margin-bottom: 1.5rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2uxmfyeSzVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
-                <p class="project-description">
-                    A compilation news reel showcasing broadcast journalism skills including live standup reporting, teleprompter delivery, news package production, and interview techniques.
-                </p>
-                
-                <p class="project-description">
-                    <strong>Skills Demonstrated:</strong><br>
-                    • Live standup reporting with on-location presence<br>
-                    • Teleprompter reading with natural delivery<br>
-                    • News package production and editing<br>
-                    • Interview conducting and questioning techniques<br>
-                    • On-camera presentation and professionalism
-                </p>
-
-                <p class="project-description">
-                    <strong>Production:</strong> Produced for Appalachian State University broadcast journalism coursework. Demonstrates ability to work under deadline pressure, adapt to breaking news situations, and deliver clear, concise reporting across multiple formats.
-                </p>
+            <p class="project-description">
+                A news package on Appalachian State's efforts to preserve local Appalachian cultural heritage.
+            </p>
+            <p class="project-description">
+                <strong>My Role:</strong> On-camera stand-up reporting and video editing, including footage shot by a team member.
+            </p>
             </div>
 
             <!-- SECTION DIVIDER -->
@@ -101,18 +91,21 @@ document.addEventListener('click', function(e) {
             </div>
 
             <!-- BALLOON EP 2 -->
-            <div class="project featured">
-                <h3>The Balloon — Episode 2</h3>
-                <p class="project-meta">Type: Studio Production | Spring 2026</p>
+<div class="project featured">
+    <h3>The Balloon — Episode 2</h3>
+    <p class="project-meta">Type: Studio Production | Spring 2026</p>
 
-                <p class="project-description" style="color: var(--text-dim); font-style: italic;">
-                    Episode coming soon.
-                </p>
+    <div class="video-embed" style="margin-bottom: 1.5rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ax2P-Bs5jdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-                <p class="project-description">
-                    <strong>My Roles:</strong> Editor, Graphics, Segment Producer
-                </p>
-            </div>
+    <p class="project-description">
+        Produced, wrote, and appeared in "Brain Freeze," a segment interviewing a university director and professor, for the show's second episode.
+    </p>
+    <p class="project-description">
+        <strong>My Roles:</strong> Segment Producer, Writer, Editor, On-Camera Talent
+    </p>
+</div>
 
         </div>
     </section>
@@ -124,39 +117,5 @@ document.addEventListener('click', function(e) {
         </div>
     </footer>
 
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
-    
 </body>
 </html>
