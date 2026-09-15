@@ -88,33 +88,20 @@ document.addEventListener('click', function(e) {
     </p>
 </div>
 
-            <!-- SECTION: PROMOTIONAL DESIGN -->
-            <div class="section-divider">
-                <h2>Promotional Design</h2>
-            </div>
+            <!-- TITLE CARD ANIMATION -->
+<div class="project featured">
+    <h3>Title Card Animation</h3>
+    <p class="project-meta">Type: Motion Graphics | Fall 2025</p>
 
-            <div class="design-grid">
-                <!-- MYSTIC SEAPORT -->
-                <div class="design-item">
-                    <a href="mystic-seaport-poster.png" target="_blank">
-                        <img src="mystic-seaport-poster.png" alt="Mystic Seaport Museum Promotional Poster" style="cursor: pointer;">
-                    </a>
-                    <h3>Mystic Seaport Museum: Radical Craft</h3>
-                    <p><strong>Type:</strong> Promotional Poster | <strong>Tools:</strong> Google Slides, Adobe Photoshop</p>
-                    <p>A promotional poster for Mystic Seaport Museum combining photography, typography, and information design to create compelling marketing material. The layout balances visual appeal with practical information (hours, admission, location) while maintaining the museum's brand identity. Demonstrates ability to create professional promotional materials for cultural institutions.</p>
-                </div>
+    <div class="video-embed" style="margin-bottom: 1.5rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9IxoGQy_jKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-                <!-- CONNECTICUT TOURISM -->
-                <div class="design-item">
-                    <a href="connecticut-tourism-brochure.png" target="_blank">
-                        <img src="connecticut-tourism-brochure.png" alt="Connecticut Tourism Brochure" style="cursor: pointer;">
-                    </a>
-                    <h3>Connecticut: Qui transtulit sustinet</h3>
-                    <p><strong>Type:</strong> Tourism Brochure | <strong>Tools:</strong> Google Slides, Adobe Photoshop</p>
-                    <p>A tourism brochure showcasing Connecticut attractions with integrated photography, layout design, and copywriting. The design combines drone photography with promotional content to highlight state landmarks and activities. Features clean typography, strategic use of white space, and organized information architecture suitable for print or digital distribution.</p>
-                </div>
-            </div>
-
+    <p class="project-description">
+        Individual contribution to a narrative short: opening title sequence built around a glitch effect that fractures into white, blue, and red before cutting to black.
+    </p>
+</div>
+            
             <!-- SECTION: COLLABORATIVE WORK -->
             <div class="section-divider">
                 <h2>Collaborative Work</h2>
@@ -146,39 +133,5 @@ document.addEventListener('click', function(e) {
         </div>
     </footer>
 
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
-    
 </body>
 </html>
