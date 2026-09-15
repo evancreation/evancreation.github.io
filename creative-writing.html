@@ -9,30 +9,31 @@
 </head>
 <body>
     <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html">About</a>
-      
-      <div class="dropdown">
-        <button class="dropbtn">Audiovisual Production</button>
-        <div class="dropdown-content">
-          <a href="film.html">Film Production</a>
-          <a href="audio-stories.html">Audio Stories</a>
-          <a href="broadcast-news.html">Broadcast/News</a>
-          <a href="design-motion.html">Design &amp; Motion</a>
-        </div>
-      </div>
-      
-      <div class="dropdown">
-        <button class="dropbtn">Writing</button>
-        <div class="dropdown-content">
-          <a href="professional-writing.html">Professional Writing</a>
-          <a href="academic-writing.html">Academic Writing</a>
-          <a href="creative-writing.html">Creative Writing</a>
-        </div>
-      </div>
-      
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+
+    <script>
+fetch('nav.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('nav-placeholder').innerHTML = html;
+    // Re-attach dropdown behavior after nav loads
+    document.querySelectorAll('.dropbtn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const dropdown = this.parentElement;
+        const isActive = dropdown.classList.contains('active');
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+        if (!isActive) dropdown.classList.add('active');
+      });
+    });
+  });
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
+</script>
 
     <!-- PAGE HEADER -->
     <section class="page-header">
