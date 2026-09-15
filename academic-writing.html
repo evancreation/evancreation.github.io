@@ -138,39 +138,5 @@ document.addEventListener('click', function(e) {
         </div>
     </footer>
 
-<script>
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Click to toggle dropdown
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            const dropdown = this.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            // Close all dropdowns first
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-            
-            // If this one wasn't active, open it
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
-            document.querySelectorAll('.dropdown').forEach(d => {
-                d.classList.remove('active');
-            });
-        }
-    });
-});
-</script>
-    
 </body>
 </html>
