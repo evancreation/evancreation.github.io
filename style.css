@@ -18,9 +18,9 @@
 body {
     font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
     background: 
-        linear-gradient(rgba(15, 15, 30, 0.94), rgba(15, 15, 30, 0.94)),
-        repeating-linear-gradient(0deg, #1a1a2e 0px, #1a1a2e 24px, #0f0f1e 25px, #0f0f1e 26px),
-        repeating-linear-gradient(90deg, #1a1a2e 0px, #1a1a2e 48px, #0f0f1e 49px, #0f0f1e 50px);
+        linear-gradient(rgba(15, 15, 30, 0.88), rgba(15, 15, 30, 0.88)),
+        repeating-linear-gradient(0deg, #1e1e35 0px, #1e1e35 22px, #0a0a16 23px, #0a0a16 26px),
+        repeating-linear-gradient(90deg, #1e1e35 0px, #1e1e35 46px, #0a0a16 47px, #0a0a16 50px);
     color: var(--text);
     line-height: 1.6;
     position: relative;
@@ -459,18 +459,18 @@ nav > a:hover::after {
 /* PROJECTS */
 .project {
     margin-bottom: 4rem;
-    padding-bottom: 4rem;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(26, 26, 46, 0.5);
+    background: rgba(26, 26, 46, 0.75);
     padding: 2rem;
     border-radius: 10px;
-    border: 2px solid rgba(0, 217, 255, 0.15);
+    border: 2px solid rgba(0, 217, 255, 0.2);
     box-shadow: 
-        0 8px 20px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05),
-        inset 0 -2px 8px rgba(0, 0, 0, 0.3);
+        0 20px 40px rgba(0, 0, 0, 0.7),
+        0 2px 6px rgba(0, 0, 0, 0.8),
+        inset 0 2px 0 rgba(255, 255, 255, 0.08),
+        inset 0 -6px 16px rgba(0, 0, 0, 0.5);
 }
 
 .project:last-child {
