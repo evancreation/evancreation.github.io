@@ -384,6 +384,23 @@ nav > a:hover::after {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+.work-section, .hero, .page-header {
+    position: relative;
+}
+
+.work-section::before, .hero::before, .page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(0deg, transparent 0px, transparent 22px, rgba(0,0,0,0.4) 23px, rgba(0,0,0,0.4) 26px),
+        repeating-linear-gradient(90deg, transparent 0px, transparent 46px, rgba(0,0,0,0.4) 47px, rgba(0,0,0,0.4) 50px);
+    pointer-events: none;
+    z-index: 0;
+}
 
 /* FEATURED GRID (Homepage) */
 .featured-grid {
