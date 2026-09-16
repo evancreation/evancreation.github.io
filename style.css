@@ -358,11 +358,11 @@ nav > a:hover::after {
 /* WORK SECTIONS */
 .work-section {
     padding: 6rem 0;
-    background: var(--dark-surface);
+    background: rgba(26, 26, 46, 0.85);
 }
 
 .alt-bg {
-    background: var(--dark-bg);
+    background: rgba(15, 15, 30, 0.85);
 }
 
 .section-title {
