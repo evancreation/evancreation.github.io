@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWS Communications Internship - Evan</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <div id="nav-placeholder"></div>
+
+    <script>
+fetch('nav.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('nav-placeholder').innerHTML = html;
+    document.querySelectorAll('.dropbtn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const dropdown = this.parentElement;
+        const isActive = dropdown.classList.contains('active');
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+        if (!isActive) dropdown.classList.add('active');
+      });
+    });
+  });
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
+</script>
+
+    <!-- =====================================================
+         NOTES FOR EDITING
+         - Anything in [square brackets] still needs your words.
+         - "unlit" blocks are things that aren't made yet. When one is
+           ready, delete the class "unlit" and its status badge.
+         - To add a sticker, copy a <div class="sticker"> block.
+         ===================================================== -->
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>GWS Internship</h1>
+            <p class="page-subtitle">Communications work for Appalachian State University's Gender, Women's &amp; Sexuality Studies program</p>
+        </div>
+    </section>
+
+    <section class="work-section">
+        <div class="container">
+
+            <!-- OVERVIEW -->
+            <div class="info-panel">
+                <p>
+                    As the communications intern for App State's Gender, Women's &amp; Sexuality Studies program, I write, design, and organize the materials students and faculty use to find the program and find their way around it: the website, the slides on campus screens, the cards handed out at events, and the logo that ties them together.
+                </p>
+                <p>
+                    The internship runs through the 2026-27 academic year. An event program and a promotional video are in production for spring.
+                </p>
+            </div>
+
+            <!-- PROGRAM LOGO -->
+            <div class="section-divider">
+                <h2>Program Logo</h2>
+            </div>
+
+            <div class="project featured">
+                <h3>GWS Program Logo</h3>
+                <p class="project-meta">Type: Logo Design | Fall 2026 | Tools: Adobe Illustrator</p>
+
+                <div class="logo-stage three">
+                    <figure class="on-light">
+                        <img src="gws-logo-mark.png" alt="GWS logo mark: a black and white tree whose trunk and roots are drawn in flowing lines">
+                        <figcaption>Mark</figcaption>
+                    </figure>
+                    <figure class="on-light">
+                        <img src="gws-logo-full-name.png" alt="GWS logo mark above the words Gender, Women's and Sexuality Studies">
+                        <figcaption>Full name</figcaption>
+                    </figure>
+                    <figure class="on-light">
+                        <img src="gws-logo-acronym.png" alt="GWS logo mark with the letters GWS set vertically beside it">
+                        <figcaption>Acronym</figcaption>
+                    </figure>
+                </div>
+
+                <p class="project-description">
+                    A one-color mark with three lockups, so the same logo holds up as a corner badge on a slide, a header on a card, or the full program name on print.
+                </p>
+                <p class="project-description">
+                    [One or two sentences on the idea behind the mark: what it needed to say about the program, and why this image says it.]
+                </p>
+                <p class="project-description">
+                    <strong>My Role:</strong> Concept, drawing, and final files.
+                </p>
+            </div>
+
+            <!-- WEBSITE COPY -->
+            <div class="section-divider">
+                <h2>Website Copy</h2>
+            </div>
+
+            <div class="project featured">
+                <h3>GWS Program Website Rewrite</h3>
+                <p class="project-meta">Type: Website Copy | Fall 2026 | Style: AP</p>
+                <p class="project-description">
+                    A rewrite of the program's core pages for the reader who has thirty seconds: a prospective student trying to work out what GWS is, what they could do with it, and what to click next.
+                </p>
+
+                <div class="excerpt-grid">
+                    <div class="excerpt">
+                        <h4>About</h4>
+                        <p>Founded in 1976, Appalachian State University's Gender, Women's and Sexuality Studies (GWS) program is the oldest of its kind in the UNC System and the second-oldest in North Carolina.</p>
+                    </div>
+                    <div class="excerpt">
+                        <h4>Career Development</h4>
+                        <p>A GWS degree doesn't lock you into one career path; it opens thousands.</p>
+                    </div>
+                    <div class="excerpt">
+                        <h4>Graduate Minor</h4>
+                        <p>A nine-credit add-on for students already in an App State graduate program, built to fit programs with fewer elective hours.</p>
+                    </div>
+                </div>
+
+                <ul class="plain-list">
+                    <li><strong>Pages covered:</strong> About, Career Development, Honors and Triota, Student Profiles, Undergraduate Programs of Study (the B.A. and three minors), and Graduate Programs of Study (the certificate and minor).</li>
+                    <li><strong>Questions as headings:</strong> the career page is organized around what students actually ask, such as where majors end up working and what they earn.</li>
+                    <li><strong>Sourced claims:</strong> every statistic names where it came from.</li>
+                    <li><strong>A next step on every page:</strong> each one ends with a link onward or a person to contact.</li>
+                </ul>
+
+                <p class="project-description">
+                    <strong>My Role:</strong> Writing and editing in AP style, plus student profile writing.
+                </p>
+                <!-- When you have a PDF of the rewrite to share, upload it and uncomment this:
+                <a href="gws-site-copy.pdf" class="btn btn-secondary" target="_blank">Read the Rewrite (PDF)</a> -->
+            </div>
+
+            <!-- SCALA -->
+            <div class="section-divider">
+                <h2>Campus Screens</h2>
+            </div>
+
+            <div class="project featured">
+                <h3>Course Slides for Scala Digital Signage</h3>
+                <p class="project-meta">Type: Digital Signage Templates | Spring 2027 course lineup | Tools: Google Slides</p>
+                <p class="project-description">
+                    Scala is the system behind the TV screens around App State's campus. GWS uses it to advertise next semester's courses, so each slide has a few seconds to answer three things: what the class is, when it meets, and who can take it.
+                </p>
+                <p class="project-description">
+                    I built the slides as a template system, not one-off graphics. Every course keeps its own color from semester to semester, and the file includes a color key, how-to notes for each layout, and a submission checklist, so whoever updates them next doesn't start from zero.
+                </p>
+
+                <h4 class="sub">Card layout</h4>
+                <p class="project-description">One course per slide on a bold color field.</p>
+                <div class="slide-grid">
+                    <a href="gws-scala-card-2421.png" target="_blank"><img src="gws-scala-card-2421.png" alt="Rust-colored slide for GWS 2421, Sex, Gender, and Power, with meeting time, eligibility and Gen Ed columns"></a>
+                    <a href="gws-scala-card-2525.png" target="_blank"><img src="gws-scala-card-2525.png" alt="Dark green slide for GWS 2525, Global Women's Issues"></a>
+                    <a href="gws-scala-card-3010.png" target="_blank"><img src="gws-scala-card-3010.png" alt="Sage green slide for GWS 3010, Professional Practices in Gender, Women's and Sexuality Studies"></a>
+                    <a href="gws-scala-card-3050.png" target="_blank"><img src="gws-scala-card-3050.png" alt="Navy slide for GWS 3050, Gender, Sexuality, and Social Movements"></a>
+                    <a href="gws-scala-card-4200.png" target="_blank"><img src="gws-scala-card-4200.png" alt="Blue slide for GWS 4200, Histories of Sexuality"></a>
+                    <a href="gws-scala-card-5650.png" target="_blank"><img src="gws-scala-card-5650.png" alt="Gold slide for GWS 5650, Feminist Thought"></a>
+                </div>
+
+                <h4 class="sub">Lineup layout</h4>
+                <p class="project-description">A matching series. The row along the bottom of each slide advertises the other five courses too.</p>
+                <div class="slide-grid">
+                    <a href="gws-scala-lineup-2421.png" target="_blank"><img src="gws-scala-lineup-2421.png" alt="Lineup slide for GWS 2421 with a large rust course-number block and a row listing all six spring courses"></a>
+                    <a href="gws-scala-lineup-2525.png" target="_blank"><img src="gws-scala-lineup-2525.png" alt="Lineup slide for GWS 2525 with a large dark green course-number block"></a>
+                    <a href="gws-scala-lineup-5650.png" target="_blank"><img src="gws-scala-lineup-5650.png" alt="Lineup slide for GWS 5650 with a large gold course-number block"></a>
+                </div>
+
+                <h4 class="sub">The system and other directions</h4>
+                <p class="project-description">The color key that governs every slide, and three alternate concepts explored for the same course.</p>
+                <div class="slide-grid two">
+                    <a href="gws-scala-color-key.png" target="_blank"><img src="gws-scala-color-key.png" alt="Color key assigning one color and hex code to each of six GWS courses"></a>
+                    <a href="gws-scala-concept-postcard.png" target="_blank"><img src="gws-scala-concept-postcard.png" alt="Postcard concept with a stamp and postmark reading Spring 2027"></a>
+                    <a href="gws-scala-concept-split.png" target="_blank"><img src="gws-scala-concept-split.png" alt="Split concept with course details on a rust band above the course title"></a>
+                    <a href="gws-scala-concept-tabs.png" target="_blank"><img src="gws-scala-concept-tabs.png" alt="Tabbed concept in a serif typeface with course numbers as index tabs down the right edge"></a>
+                </div>
+
+                <p class="project-description">
+                    <strong>My Role:</strong> Design, copywriting, and documentation.
+                </p>
+            </div>
+
+            <!-- WALK CARDS -->
+            <div class="section-divider">
+                <h2>Walk Cards</h2>
+            </div>
+
+            <div class="project featured">
+                <div class="status-badge">Mockups</div>
+                <h3>Walk Card Concepts</h3>
+                <p class="project-meta">Type: Print Handout | 3.5 x 2 in | Fall 2026</p>
+                <p class="project-description">
+                    Business-card-size handouts that give someone a reason to keep the card and a QR code to act on it. Three concepts, each with a different way in: a dog, a quiz, and a plain answer.
+                </p>
+
+                <h4 class="sub">Skipper</h4>
+                <div class="card-pair">
+                    <figure><a href="gws-walk-card-skipper-front.png" target="_blank"><img src="gws-walk-card-skipper-front.png" alt="Card front with a two-color dog illustration and the words Hi, I'm Skipper. My human teaches Gender, Women's and Sexuality Studies"></a><figcaption>Front</figcaption></figure>
+                    <figure><a href="gws-walk-card-skipper-back.png" target="_blank"><img src="gws-walk-card-skipper-back.png" alt="Card back listing a B.A., three minors and two graduate options beside a QR code"></a><figcaption>Back</figcaption></figure>
+                </div>
+
+                <h4 class="sub">You might be a GWS major</h4>
+                <div class="card-pair">
+                    <figure><a href="gws-walk-card-checklist-front.png" target="_blank"><img src="gws-walk-card-checklist-front.png" alt="Card front with a checklist titled You might be a GWS major if you've, with four boxes ticked and declared the major left unticked"></a><figcaption>Front</figcaption></figure>
+                    <figure><a href="gws-walk-card-checklist-back.png" target="_blank"><img src="gws-walk-card-checklist-back.png" alt="Card back reading Four out of five? That last box is easy, with a QR code"></a><figcaption>Back</figcaption></figure>
+                </div>
+
+                <h4 class="sub">So what's GWS?</h4>
+                <div class="card-pair">
+                    <figure><a href="gws-walk-card-wordmark-front.png" target="_blank"><img src="gws-walk-card-wordmark-front.png" alt="Card front with the letters GWS in heavy black type above the program and university names"></a><figcaption>Front</figcaption></figure>
+                    <figure><a href="gws-walk-card-wordmark-back.png" target="_blank"><img src="gws-walk-card-wordmark-back.png" alt="Card back headed So what's GWS? with a two-sentence answer and a QR code"></a><figcaption>Back</figcaption></figure>
+                </div>
+
+                <p class="project-description">
+                    <strong>My Role:</strong> Concept, copywriting, and design.
+                </p>
+            </div>
+
+            <!-- STICKERS -->
+            <div class="section-divider">
+                <h2>Stickers</h2>
+            </div>
+
+            <div class="sticker-wall">
+                <div class="sticker wide">
+                    <a href="gws-sticker-bubble.png" target="_blank">
+                        <img src="gws-sticker-bubble.png" alt="Sticker of the letters GWS in glossy yellow bubble lettering with a dark drop shadow">
+                    </a>
+                    <h3>GWS Bubble Letters</h3>
+                    <p>Fall 2026</p>
+                </div>
+
+                <div class="sticker">
+                    <div class="sticker-slot">More stickers on the way</div>
+                </div>
+            </div>
+
+            <!-- IN PRODUCTION -->
+            <div class="section-divider">
+                <h2>In Production</h2>
+            </div>
+
+            <div class="project unlit">
+                <div class="status-badge unlit-badge">Coming spring 2027</div>
+                <h3>Event Program</h3>
+                <p class="project-description">
+                    [One sentence on what the program is for.] It will be posted here once it's printed.
+                </p>
+            </div>
+
+            <div class="project unlit">
+                <div class="status-badge unlit-badge">Coming spring 2027</div>
+                <h3>Program Promo Video</h3>
+                <p class="project-description">
+                    A promotional video for the program, shooting next semester. Photography for it is under way now.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evan. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
