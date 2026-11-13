@@ -1349,3 +1349,210 @@ footer {
 .slide-grid figcaption strong {
     color: var(--text);
 }
+
+/* =========================================================
+   V8: THE WALL SCROLLS WITH THE PAGE, AND SIGNS ARE OFF
+   UNTIL YOU REACH FOR THEM
+   ========================================================= */
+
+/* Light pools sit at fixed spots on the wall. Three different spacings,
+   so the pattern doesn't visibly repeat on the way down. */
+body::before {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 60% 46% at 12% 50%, rgba(0, 217, 255, 0.17), transparent 70%) 0 -500px / 100% 1900px repeat-y,
+        radial-gradient(ellipse 55% 46% at 92% 50%, rgba(255, 42, 133, 0.15), transparent 70%) 0 300px / 100% 2600px repeat-y,
+        radial-gradient(ellipse 60% 46% at 38% 50%, rgba(167, 139, 250, 0.11), transparent 70%) 0 1300px / 100% 3300px repeat-y;
+}
+
+/* Grime is painted on the brick: fine grit plus bigger damp patches */
+body::after {
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.25'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 2.2 -.95'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url%28%23b%29'/%3E%3Crect width='400' height='400' filter='url%28%23n%29' opacity='.55'/%3E%3C/svg%3E") 0 0 / 400px 400px, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.25'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 2.2 -.95'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url%28%23b%29'/%3E%3Crect width='400' height='400' filter='url%28%23n%29' opacity='.55'/%3E%3C/svg%3E") 130px 90px / 1150px 1150px;
+    opacity: 0.9;
+}
+
+/* ---- Unlit glass ---- */
+.project.featured,
+.featured-item,
+.featured-item:nth-child(2),
+.featured-item:nth-child(3),
+.contact-info,
+.excerpt,
+.design-item,
+.video-embed,
+.audio-embed,
+.writing-sample.featured {
+    border-color: rgba(190, 200, 215, 0.2);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+    transition: border-color 0.25s ease, box-shadow 0.35s ease;
+}
+
+.project.featured, .featured-item, .contact-info, .excerpt { border-color: rgba(0, 217, 255, 0.22); }
+.featured-item:nth-child(2), .design-item, .video-embed { border-color: rgba(255, 42, 133, 0.24); }
+.featured-item:nth-child(3), .writing-sample.featured, .audio-embed { border-color: rgba(167, 139, 250, 0.26); }
+
+.writing-sample,
+.about-content,
+.info-panel {
+    border-left-color: rgba(167, 139, 250, 0.3);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+    transition: border-color 0.25s ease, box-shadow 0.35s ease;
+}
+
+.info-panel { border-left-color: rgba(0, 217, 255, 0.28); }
+
+.btn-primary {
+    border-color: rgba(0, 217, 255, 0.4);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.btn-secondary,
+.btn-small,
+.featured-item .btn-small {
+    background: transparent;
+    color: #ffe9f2;
+    border-color: rgba(255, 42, 133, 0.42);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.status-badge,
+.status-badge.award {
+    border-color: rgba(167, 139, 250, 0.4);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.status-badge.award { border-color: rgba(255, 42, 133, 0.42); }
+
+.project h3,
+.featured-item h3,
+.featured-item:nth-child(2) h3,
+.featured-item:nth-child(3) h3,
+.design-item h3,
+.writing-sample h3,
+.excerpt h4,
+.project h4.sub,
+.sticker h3 {
+    text-shadow: none;
+    transition: text-shadow 0.3s ease;
+}
+
+.section-divider::before {
+    background: rgba(0, 217, 255, 0.45);
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.25);
+}
+
+.section-divider h2,
+.section-title {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.35);
+}
+
+.section-title {
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.4);
+}
+
+/* ---- Lit: hover, keyboard focus, or a tap ---- */
+.project.featured:hover, .project.featured:focus-within,
+.featured-item:hover, .featured-item:focus-within,
+.contact-info:hover, .contact-info:focus-within,
+.excerpt:hover {
+    border-color: var(--core-cyan);
+    box-shadow: var(--tube-cyan), 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+}
+
+.featured-item:nth-child(2):hover, .featured-item:nth-child(2):focus-within,
+.design-item:hover, .design-item:focus-within,
+.project:hover .video-embed, .project:focus-within .video-embed {
+    border-color: var(--core-pink);
+    box-shadow: var(--tube-pink), 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+}
+
+.featured-item:nth-child(3):hover, .featured-item:nth-child(3):focus-within,
+.writing-sample.featured:hover, .writing-sample.featured:focus-within,
+.project:hover .audio-embed, .project:focus-within .audio-embed {
+    border-color: var(--core-violet);
+    box-shadow: var(--tube-violet), 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+}
+
+.writing-sample:hover, .writing-sample:focus-within,
+.about-content:hover {
+    border-left-color: var(--core-violet);
+    box-shadow: -2px 0 6px var(--neon-violet), -6px 0 20px var(--neon-violet), -14px 0 44px rgba(167, 139, 250, 0.4), 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: none;
+}
+
+.info-panel:hover {
+    border-left-color: var(--core-cyan);
+    box-shadow: -2px 0 6px var(--neon-cyan), -6px 0 20px var(--neon-cyan), -14px 0 44px rgba(0, 217, 255, 0.4), 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary:hover, .btn-primary:focus-visible {
+    background: rgba(0, 217, 255, 0.1);
+    color: var(--tube-white);
+    border-color: var(--core-cyan);
+    box-shadow: var(--tube-cyan);
+    text-shadow: var(--soft-cyan);
+    transform: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus-visible,
+.btn-small:hover, .btn-small:focus-visible,
+.featured-item .btn-small:hover {
+    background: rgba(255, 42, 133, 0.1);
+    color: #fff;
+    border-color: var(--core-pink);
+    box-shadow: var(--tube-pink);
+    text-shadow: var(--soft-pink);
+    transform: none;
+}
+
+:hover > .status-badge {
+    border-color: var(--core-violet);
+    box-shadow: var(--tube-violet);
+    text-shadow: 0 0 6px var(--neon-violet);
+}
+
+:hover > .status-badge.award {
+    border-color: var(--core-pink);
+    box-shadow: var(--tube-pink);
+    text-shadow: 0 0 6px var(--neon-pink);
+}
+
+:hover > .status-badge.unlit-badge {
+    border-color: var(--unlit);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.project:hover h3, .featured-item:hover h3, .excerpt:hover h4, .project:hover h4.sub { text-shadow: var(--soft-cyan); }
+.featured-item:nth-child(2):hover h3, .design-item:hover h3, .sticker:hover h3, .project:hover h4.sub { text-shadow: var(--soft-pink); }
+.featured-item:nth-child(3):hover h3, .writing-sample:hover h3 { text-shadow: 0 0 6px rgba(167, 139, 250, 0.9), 0 0 18px rgba(167, 139, 250, 0.45); }
+.project.unlit:hover h3 { text-shadow: none; }
+
+/* Phones and tablets can't hover, so signs there stay on low */
+@media (hover: none) {
+    .project.featured, .featured-item, .contact-info, .excerpt {
+        border-color: rgba(0, 217, 255, 0.6);
+        box-shadow: 0 0 10px rgba(0, 217, 255, 0.3), 0 18px 40px rgba(0, 0, 0, 0.7);
+    }
+    .featured-item:nth-child(2), .design-item, .video-embed {
+        border-color: rgba(255, 42, 133, 0.6);
+        box-shadow: 0 0 10px rgba(255, 42, 133, 0.3), 0 18px 40px rgba(0, 0, 0, 0.7);
+    }
+    .featured-item:nth-child(3), .writing-sample.featured, .audio-embed {
+        border-color: rgba(167, 139, 250, 0.6);
+        box-shadow: 0 0 10px rgba(167, 139, 250, 0.3), 0 18px 40px rgba(0, 0, 0, 0.7);
+    }
+    .btn-primary { border-color: rgba(0, 217, 255, 0.75); box-shadow: 0 0 8px rgba(0, 217, 255, 0.35); }
+    .btn-secondary, .btn-small, .featured-item .btn-small { border-color: rgba(255, 42, 133, 0.75); box-shadow: 0 0 8px rgba(255, 42, 133, 0.35); }
+}
